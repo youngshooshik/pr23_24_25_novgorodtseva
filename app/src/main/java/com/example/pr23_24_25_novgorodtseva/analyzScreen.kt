@@ -60,6 +60,7 @@ fun AnalyzesScreen(context: Context = LocalContext.current) {
     )
 
     val filteredCardDataList = cardDataList.filter {
+
         it.title.contains(searchQuery.value, ignoreCase = true) ||
                 it.duration.contains(searchQuery.value, ignoreCase = true) ||
                 it.price.contains(searchQuery.value, ignoreCase = true)
